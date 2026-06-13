@@ -48,7 +48,7 @@ const termBody = document.getElementById('term-body');
 if (cmdInput && termBody) {
   const commands = {
     'ls': '📁 about.txt  skills.json  projects/  certs/  contact.sh',
-    'whoami': 'darshan — DevOps Engineer | DevSecOps | CICD',
+    'whoami': 'darshan — DevOps Engineer | CI/CD Engineer ',
     'pwd': '/home/darshan/portfolio',
     'date': new Date().toUTCString(),
     'skills': '☁ AWS  ⎈ K8s  🐳 Docker  ⚙ Terraform  📊 Prometheus  🔧 Ansible  🚀 Argo CD',
