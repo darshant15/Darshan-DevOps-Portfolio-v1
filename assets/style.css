@@ -439,6 +439,10 @@ nav {
 .nb-green { background: rgba(22,163,74,0.1); color: var(--green); border: 1px solid rgba(22,163,74,0.2); }
 .nb-blue { background: rgba(59,130,246,0.1); color: var(--blue); border: 1px solid rgba(59,130,246,0.2); }
 .nb-cyan { background: rgba(8,145,178,0.1); color: var(--cyan); border: 1px solid rgba(8,145,178,0.2); }
+.nb-red { background: rgba(8,145,178,0.1); color: var(--red); border: 1px solid rgba(8,145,178,0.2); }
+.nb-orange { background: rgba(8,145,178,0.1); color: var(--orange); border: 1px solid rgba(8,145,178,0.2); }
+
+
 
 /* floating chips around photo */
 .float-chip {
