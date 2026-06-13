@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>[ darshan@devops ] ~ $ deploy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="deploy">
+
+<canvas id="devops-bg-canvas"></canvas>
+<div class="orbs-layer"><div class="orb orb-1"></div><div class="orb orb-2"></div><div class="orb orb-3"></div></div>
+<div id="page-transition"><div class="pt-spinner"></div><div class="pt-text">deploying...</div></div>
+
+<nav>
+  <div class="nav-brand">
+    <a href="index.html" data-transition><span class="bracket">[</span><span>darshan</span><span class="bracket">@devops</span><span class="bracket">]</span></a>
+    <div class="nav-dot"></div>
+  </div>
+  <ul class="nav-links">
+    <li><a href="index.html" data-page="checkout" data-transition>home</a></li>
+    <li><a href="skills.html" data-page="build" data-transition>skills</a></li>
+    <li><a href="experience.html" data-page="test" data-transition>experience</a></li>
+    <li><a href="projects.html" data-page="scan" data-transition>projects</a></li>
+    <li><a href="cicd-flow.html" data-page="pipeline" data-transition>pipeline</a></li>
+    <li><a href="about.html" data-page="config" data-transition>about</a></li>
+    <li><a href="certs.html" data-page="verify" data-transition>certs</a></li>
+    <li><a href="contact.html" data-page="deploy" data-transition>contact</a></li>
+  </ul>
+</nav>
+
+<div id="pipeline-bar" class="pipeline-bar">
+  <div class="pipeline-track"><div class="pipeline-fill"></div></div>
+  <div class="pipeline-stages"></div>
+</div>
+
+<div class="page-content">
+
+<div class="page-hero-mini reveal">
+  <div class="section-eyebrow" style="justify-content:center;">$ ./reach_out.sh</div>
+  <h1>Get In <span style="color:var(--green)">Touch</span></h1>
+  <p>Final stage — deploy your message. Open to DevOps, SRE, and Platform Engineering roles.</p>
+</div>
+<section id="contact">
+  <div class="contact-wrapper">
+    <div class="contact-left reveal">
+      <h3>Let's build something<br>reliable together.</h3>
+      <p>Whether it's a quick chat or a full infra discussion — I'm just a command away.</p>
+      <div class="contact-links">
+        <a href="mailto:darshan@email.com" class="contact-link"><div class="cl-icon">✉</div>darshan@email.com</a>
+        <a href="https://github.com/darshant15" target="_blank" class="contact-link"><div class="cl-icon">⌥</div>github.com/darshant15</a>
+        <a href="https://linkedin.com/" target="_blank" class="contact-link"><div class="cl-icon">◈</div>linkedin.com/in/darshan</a>
+      </div>
+    </div>
+    <div class="contact-terminal reveal">
+      <div class="ct-bar"><div class="ctb-dot r"></div><div class="ctb-dot y"></div><div class="ctb-dot g"></div><span class="ct-title">send_message.sh</span></div>
+      <div class="ct-body">
+        <div class="ct-field"><div class="ct-label">echo $YOUR_NAME</div><input class="ct-input" type="text" placeholder="Recruiter, Engineer, Human..." /></div>
+        <div class="ct-field"><div class="ct-label">echo $YOUR_EMAIL</div><input class="ct-input" type="email" placeholder="you@company.com" /></div>
+        <div class="ct-field"><div class="ct-label">cat message.txt</div><textarea class="ct-input" placeholder="Hello Darshan, I saw your portfolio and..."></textarea></div>
+        <button class="ct-send" onclick="handleSend(this)">$ ./send_message.sh</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+</div>
+<div id="page-nav"></div>
+<footer>
+  <span class="footer-brand">[ darshan@devops ]</span> — Multi-page CI/CD Portfolio &nbsp;·&nbsp; © 2025 Darshan
+</footer>
+<div class="status-bar">
+  <div class="sb-item" id="sb-stage">⎈ stage</div>
+  <span class="sb-sep">|</span>
+  <div class="sb-item">✓ all systems nominal</div>
+  <span class="sb-sep">|</span>
+  <div class="sb-item">🟢 online</div>
+  <div class="sb-right">
+    <div class="sb-item" id="sb-time"></div>
+    <div class="sb-item">UTF-8</div>
+    <div class="sb-item">zsh</div>
+  </div>
+</div>
+<script src="assets/logos.js"></script>
+<script src="assets/bg.js"></script>
+<script src="assets/common.js"></script>
+
+<script src="assets/script.js"></script>
+</body>
+</html>

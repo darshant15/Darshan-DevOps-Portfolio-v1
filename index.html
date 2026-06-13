@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>[ darshan@devops ] ~ $ checkout</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="checkout">
+
+<canvas id="devops-bg-canvas"></canvas>
+<div class="orbs-layer"><div class="orb orb-1"></div><div class="orb orb-2"></div><div class="orb orb-3"></div></div>
+
+<div id="page-transition"><div class="pt-spinner"></div><div class="pt-text">git checkout...</div></div>
+
+<nav>
+  <div class="nav-brand">
+    <a href="index.html" data-transition><span class="bracket">[</span><span>darshan</span><span class="bracket">@devops</span><span class="bracket">]</span></a>
+    <div class="nav-dot"></div>
+  </div>
+  <ul class="nav-links">
+    <li><a href="index.html" data-page="checkout" data-transition>home</a></li>
+    <li><a href="skills.html" data-page="build" data-transition>skills</a></li>
+    <li><a href="experience.html" data-page="test" data-transition>experience</a></li>
+    <li><a href="projects.html" data-page="scan" data-transition>projects</a></li>
+    <li><a href="cicd-flow.html" data-page="pipeline" data-transition>pipeline</a></li>
+    <li><a href="about.html" data-page="config" data-transition>about</a></li>
+    <li><a href="certs.html" data-page="verify" data-transition>certs</a></li>
+    <li><a href="contact.html" data-page="deploy" data-transition>contact</a></li>
+  </ul>
+</nav>
+
+<div id="pipeline-bar" class="pipeline-bar">
+  <div class="pipeline-track"><div class="pipeline-fill"></div></div>
+  <div class="pipeline-stages"></div>
+</div>
+
+<div class="page-content">
+<section style="padding-top:0;max-width:100%;padding-left:60px;padding-right:60px;">
+  <div class="hero-bg-grid"></div>
+  <div id="hero" style="min-height:85vh;display:flex;align-items:center;padding:40px 0 0;">
+    <div class="hero-grid">
+      <div class="hero-left">
+        <div class="hero-prompt-bar">
+          <span style="color:var(--text-muted);">darshan</span>
+          <span class="prompt-path">~/portfolio</span>
+          <span class="prompt-git"> git:(main)</span>
+          <span class="prompt-status">✓</span>
+          <span style="color:var(--text-muted);">$</span>
+          <span class="prompt-cursor"></span>
+        </div>
+        <h1 class="hero-name">
+          Darshan<br>
+          <span class="accent">DevOps</span>
+          <span class="dim">Engineer</span>
+        </h1>
+        <div class="hero-role">
+          <span class="arrow">→</span>
+          <span id="type-text"></span>
+          <span class="prompt-cursor"></span>
+        </div>
+        <p class="hero-desc">
+          Building reliable infrastructure, automating the chaos, and shipping pipelines that never sleep. Navigate this portfolio like a CI/CD pipeline — click through each stage.
+        </p>
+        <div class="hero-stats">
+          <div class="stat"><div class="stat-num">2+</div><div class="stat-label">Years</div></div>
+          <div class="stat"><div class="stat-num">15+</div><div class="stat-label">Projects</div></div>
+          <div class="stat"><div class="stat-num">99.9%</div><div class="stat-label">Uptime</div></div>
+          <div class="stat"><div class="stat-num">3</div><div class="stat-label">Clouds</div></div>
+        </div>
+        <div class="hero-btns">
+          <a href="skills.html" class="btn-primary" data-transition>⚡ npm run build →</a>
+          <a href="cicd-flow.html" class="btn-ghost" data-transition>⎈ view pipeline</a>
+          <a href="contact.html" class="btn-ghost" data-transition>✉ ./reach_out.sh</a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="photo-3d-scene" id="photo-scene">
+          <div class="float-chip fc1"><div class="fc-dot" style="background:var(--green);"></div>☁ AWS</div>
+          <div class="float-chip fc2"><div class="fc-dot" style="background:var(--cyan);"></div>⎈ K8s</div>
+          <div class="float-chip fc3"><div class="fc-dot" style="background:var(--orange);"></div>🐳 Docker</div>
+          <div class="float-chip fc4"><div class="fc-dot" style="background:var(--purple);"></div>⚙ Terraform</div>
+          <div class="photo-3d-card" id="photo-card">
+            <div class="photo-terminal">
+              <div class="photo-titlebar">
+                <div class="tb-dot red"></div><div class="tb-dot yellow"></div><div class="tb-dot green-dot"></div>
+                <span class="tb-title">darshan@devops — zsh</span>
+              </div>
+              <div class="photo-body">
+                <img class="photo-img" src="assets/photo.jpg" alt="Darshan" />
+                <div class="photo-overlay"></div>
+                <div class="photo-nametag">
+                  <div class="photo-nametag-name">Darshan</div>
+                  <div class="photo-nametag-role">$ whoami → DevOps Engineer</div>
+                  <div class="photo-nametag-badges">
+                    <span class="nano-badge nb-green">AWS Certified</span>
+                    <span class="nano-badge nb-blue">CKA</span>
+                    <span class="nano-badge nb-cyan">SRE</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+
+<div id="page-nav"></div>
+
+<footer>
+  <span class="footer-brand">[ darshan@devops ]</span> — Multi-page CI/CD Portfolio &nbsp;·&nbsp; © 2025 Darshan
+</footer>
+
+<div class="status-bar">
+  <div class="sb-item" id="sb-stage">⎈ checkout</div>
+  <span class="sb-sep">|</span>
+  <div class="sb-item">✓ stage 1/8</div>
+  <span class="sb-sep">|</span>
+  <div class="sb-item">🟢 online</div>
+  <div class="sb-right">
+    <div class="sb-item" id="sb-time"></div>
+    <div class="sb-item">UTF-8</div>
+    <div class="sb-item">zsh</div>
+  </div>
+</div>
+
+<script src="assets/logos.js"></script>
+<script src="assets/bg.js"></script>
+<script src="assets/common.js"></script>
+<script src="assets/script.js"></script>
+</body>
+</html>

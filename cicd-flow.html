@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>[ darshan@devops ] ~ $ pipeline</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="pipeline">
+
+<canvas id="devops-bg-canvas"></canvas>
+<div class="orbs-layer"><div class="orb orb-1"></div><div class="orb orb-2"></div><div class="orb orb-3"></div></div>
+<div id="page-transition"><div class="pt-spinner"></div><div class="pt-text">loading pipeline...</div></div>
+
+<nav>
+  <div class="nav-brand">
+    <a href="index.html" data-transition><span class="bracket">[</span><span>darshan</span><span class="bracket">@devops</span><span class="bracket">]</span></a>
+    <div class="nav-dot"></div>
+  </div>
+  <ul class="nav-links">
+    <li><a href="index.html" data-page="checkout" data-transition>home</a></li>
+    <li><a href="skills.html" data-page="build" data-transition>skills</a></li>
+    <li><a href="experience.html" data-page="test" data-transition>experience</a></li>
+    <li><a href="projects.html" data-page="scan" data-transition>projects</a></li>
+    <li><a href="cicd-flow.html" data-page="pipeline" data-transition>pipeline</a></li>
+    <li><a href="about.html" data-page="config" data-transition>about</a></li>
+    <li><a href="certs.html" data-page="verify" data-transition>certs</a></li>
+    <li><a href="contact.html" data-page="deploy" data-transition>contact</a></li>
+  </ul>
+</nav>
+
+<div id="pipeline-bar" class="pipeline-bar">
+  <div class="pipeline-track"><div class="pipeline-fill"></div></div>
+  <div class="pipeline-stages"></div>
+</div>
+
+<div class="page-content">
+
+<div class="cicd-page">
+  <div class="cicd-header reveal">
+    <div class="section-eyebrow" style="justify-content:center;">$ ./run_pipeline.sh</div>
+    <h1>CI/CD <span style="color:var(--green)">Pipeline</span></h1>
+    <p>Interactive end-to-end deployment flow — watch each stage run in real time. Click the button to re-run the pipeline.</p>
+    <button class="cicd-run-btn" id="run-pipeline">▶ Run Pipeline</button>
+  </div>
+  <div id="cicd-flow" class="cicd-flow reveal"></div>
+  <div class="cicd-terminal reveal">
+    <div class="cicd-term-bar"><div class="ttb-dot red"></div><div class="ttb-dot yellow"></div><div class="ttb-dot green-d"></div><span>pipeline.log — live output</span></div>
+    <div id="cicd-log" class="cicd-log"></div>
+  </div>
+  <div class="cicd-cards">
+    <div class="cicd-info-card tilt-3d reveal"><h3>⚡ GitOps Workflow</h3><p>Every change flows through source control → automated build → test → scan → staging → approval → production deploy.</p></div>
+    <div class="cicd-info-card tilt-3d reveal"><h3>🔒 Security First</h3><p>Trivy container scanning and policy gates ensure nothing vulnerable reaches production.</p></div>
+    <div class="cicd-info-card tilt-3d reveal"><h3>📊 Full Observability</h3><p>Post-deploy monitoring with Grafana dashboards and PagerDuty alerting for zero blind spots.</p></div>
+  </div>
+</div>
+
+</div>
+<div id="page-nav"></div>
+<footer>
+  <span class="footer-brand">[ darshan@devops ]</span> — Multi-page CI/CD Portfolio &nbsp;·&nbsp; © 2025 Darshan
+</footer>
+<div class="status-bar">
+  <div class="sb-item" id="sb-stage">⎈ stage</div>
+  <span class="sb-sep">|</span>
+  <div class="sb-item">✓ all systems nominal</div>
+  <span class="sb-sep">|</span>
+  <div class="sb-item">🟢 online</div>
+  <div class="sb-right">
+    <div class="sb-item" id="sb-time"></div>
+    <div class="sb-item">UTF-8</div>
+    <div class="sb-item">zsh</div>
+  </div>
+</div>
+<script src="assets/logos.js"></script>
+<script src="assets/bg.js"></script>
+<script src="assets/common.js"></script>
+<script src="assets/cicd.js"></script>
+<script src="assets/script.js"></script>
+</body>
+</html>

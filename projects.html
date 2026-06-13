@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>[ darshan@devops ] ~ $ scan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="scan">
+
+<canvas id="devops-bg-canvas"></canvas>
+<div class="orbs-layer"><div class="orb orb-1"></div><div class="orb orb-2"></div><div class="orb orb-3"></div></div>
+<div id="page-transition"><div class="pt-spinner"></div><div class="pt-text">trivy scan...</div></div>
+
+<nav>
+  <div class="nav-brand">
+    <a href="index.html" data-transition><span class="bracket">[</span><span>darshan</span><span class="bracket">@devops</span><span class="bracket">]</span></a>
+    <div class="nav-dot"></div>
+  </div>
+  <ul class="nav-links">
+    <li><a href="index.html" data-page="checkout" data-transition>home</a></li>
+    <li><a href="skills.html" data-page="build" data-transition>skills</a></li>
+    <li><a href="experience.html" data-page="test" data-transition>experience</a></li>
+    <li><a href="projects.html" data-page="scan" data-transition>projects</a></li>
+    <li><a href="cicd-flow.html" data-page="pipeline" data-transition>pipeline</a></li>
+    <li><a href="about.html" data-page="config" data-transition>about</a></li>
+    <li><a href="certs.html" data-page="verify" data-transition>certs</a></li>
+    <li><a href="contact.html" data-page="deploy" data-transition>contact</a></li>
+  </ul>
+</nav>
+
+<div id="pipeline-bar" class="pipeline-bar">
+  <div class="pipeline-track"><div class="pipeline-fill"></div></div>
+  <div class="pipeline-stages"></div>
+</div>
+
+<div class="page-content">
+
+<div class="page-hero-mini reveal">
+  <div class="section-eyebrow" style="justify-content:center;">$ trivy scan projects/</div>
+  <h1>Featured <span style="color:var(--green)">Projects</span></h1>
+  <p>Stage 4 — security-scanned and production-ready deliverables.</p>
+</div>
+<section id="projects">
+  <div class="projects-grid">
+    <div class="project-card reveal tilt-3d"><div class="project-header"><div class="project-num">[01] feat: infra</div><div class="project-links"><a href="#" class="project-link">↗</a></div></div><div class="project-title">Zero-Downtime K8s Migration</div><p class="project-desc">Migrated a microservices app from bare VM to fully orchestrated Kubernetes cluster with rolling deployments, HPA, and zero downtime.</p><div class="project-stack"><span class="stack-tag">Kubernetes</span><span class="stack-tag">Helm</span><span class="stack-tag">AWS EKS</span><span class="stack-tag">ArgoCD</span></div></div>
+    <div class="project-card reveal tilt-3d"><div class="project-header"><div class="project-num">[02] feat: pipeline</div><div class="project-links"><a href="cicd-flow.html" class="project-link" data-transition>⚡</a></div></div><div class="project-title">Full GitOps CI/CD Pipeline</div><p class="project-desc">Built end-to-end GitOps pipeline with automated testing, Docker builds, security scanning, and ArgoCD-based deployments.</p><div class="project-stack"><span class="stack-tag">GitHub Actions</span><span class="stack-tag">Docker</span><span class="stack-tag">ArgoCD</span><span class="stack-tag">Trivy</span></div></div>
+    <div class="project-card reveal tilt-3d"><div class="project-header"><div class="project-num">[03] feat: iac</div><div class="project-links"><a href="#" class="project-link">↗</a></div></div><div class="project-title">Multi-Env AWS Terraform Modules</div><p class="project-desc">Wrote reusable Terraform modules for provisioning VPC, ECS, RDS, and CloudFront across dev/staging/prod.</p><div class="project-stack"><span class="stack-tag">Terraform</span><span class="stack-tag">AWS</span><span class="stack-tag">S3 Backend</span><span class="stack-tag">VPC</span></div></div>
+    <div class="project-card reveal tilt-3d"><div class="project-header"><div class="project-num">[04] feat: monitoring</div><div class="project-links"><a href="#" class="project-link">↗</a></div></div><div class="project-title">Observability Stack from Scratch</div><p class="project-desc">Deployed Prometheus + Grafana + Loki + Alertmanager on Kubernetes with PagerDuty alerts.</p><div class="project-stack"><span class="stack-tag">Prometheus</span><span class="stack-tag">Grafana</span><span class="stack-tag">Loki</span><span class="stack-tag">Alertmanager</span></div></div>
+  </div>
+</section>
+
+</div>
+<div id="page-nav"></div>
+<footer>
+  <span class="footer-brand">[ darshan@devops ]</span> — Multi-page CI/CD Portfolio &nbsp;·&nbsp; © 2025 Darshan
+</footer>
+<div class="status-bar">
+  <div class="sb-item" id="sb-stage">⎈ stage</div>
+  <span class="sb-sep">|</span>
+  <div class="sb-item">✓ all systems nominal</div>
+  <span class="sb-sep">|</span>
+  <div class="sb-item">🟢 online</div>
+  <div class="sb-right">
+    <div class="sb-item" id="sb-time"></div>
+    <div class="sb-item">UTF-8</div>
+    <div class="sb-item">zsh</div>
+  </div>
+</div>
+<script src="assets/logos.js"></script>
+<script src="assets/bg.js"></script>
+<script src="assets/common.js"></script>
+
+<script src="assets/script.js"></script>
+</body>
+</html>

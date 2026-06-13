@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>[ darshan@devops ] ~ $ configure</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="config">
+
+<canvas id="devops-bg-canvas"></canvas>
+<div class="orbs-layer"><div class="orb orb-1"></div><div class="orb orb-2"></div><div class="orb orb-3"></div></div>
+<div id="page-transition"><div class="pt-spinner"></div><div class="pt-text">terraform apply...</div></div>
+
+<nav>
+  <div class="nav-brand">
+    <a href="index.html" data-transition><span class="bracket">[</span><span>darshan</span><span class="bracket">@devops</span><span class="bracket">]</span></a>
+    <div class="nav-dot"></div>
+  </div>
+  <ul class="nav-links">
+    <li><a href="index.html" data-page="checkout" data-transition>home</a></li>
+    <li><a href="skills.html" data-page="build" data-transition>skills</a></li>
+    <li><a href="experience.html" data-page="test" data-transition>experience</a></li>
+    <li><a href="projects.html" data-page="scan" data-transition>projects</a></li>
+    <li><a href="cicd-flow.html" data-page="pipeline" data-transition>pipeline</a></li>
+    <li><a href="about.html" data-page="config" data-transition>about</a></li>
+    <li><a href="certs.html" data-page="verify" data-transition>certs</a></li>
+    <li><a href="contact.html" data-page="deploy" data-transition>contact</a></li>
+  </ul>
+</nav>
+
+<div id="pipeline-bar" class="pipeline-bar">
+  <div class="pipeline-track"><div class="pipeline-fill"></div></div>
+  <div class="pipeline-stages"></div>
+</div>
+
+<div class="page-content">
+
+<div class="page-hero-mini reveal">
+  <div class="section-eyebrow" style="justify-content:center;">$ terraform apply</div>
+  <h1>About <span style="color:var(--purple)">Me</span></h1>
+  <p>Stage 6 — configured environment variables and personal philosophy.</p>
+</div>
+<section>
+  <div class="about-layout">
+    <div class="terminal-window reveal">
+      <div class="terminal-titlebar"><div class="ttb-dot red"></div><div class="ttb-dot yellow"></div><div class="ttb-dot green-d"></div><span class="ttb-title">darshan@devops — zsh — 80×24</span></div>
+      <div class="terminal-body" id="term-body">
+        <div class="t-line"><span class="t-prompt">darshan@devops:~$ </span><span class="t-cmd">cat about.txt</span></div>
+        <div class="t-line t-output">&nbsp;</div>
+        <div class="t-line t-output"><span class="t-key">Name:</span> <span class="t-val">Darshan</span></div>
+        <div class="t-line t-output"><span class="t-key">Role:</span> <span class="t-val">DevOps Engineer</span></div>
+        <div class="t-line t-output"><span class="t-key">Experience:</span> <span class="t-val">2+ Years</span></div>
+        <div class="t-line t-output"><span class="t-key">Focus:</span> <span class="t-val">Cloud · Automation · Reliability</span></div>
+        <div class="t-line t-output">&nbsp;</div>
+        <div class="t-line t-output"><span class="t-comment"># Philosophy</span></div>
+        <div class="t-line t-output"><span class="t-string">"If it's not automated, it's a bug waiting to happen."</span></div>
+        <div class="t-line t-output">&nbsp;</div>
+        <div class="t-line"><span class="t-prompt">darshan@devops:~$ </span><span class="t-cursor"></span></div>
+      </div>
+      <div class="cmd-input-area">
+        <span style="font-family:var(--mono);font-size:11px;color:var(--green);font-weight:600;">darshan@devops:~$</span>
+        <input class="cmd-input" id="cmd-input" placeholder="type: help, whoami, cd pipeline..." autocomplete="off" spellcheck="false" />
+      </div>
+    </div>
+    <div class="about-stats reveal">
+      <div class="about-stat-card tilt-3d"><div class="asc-icon" style="background:rgba(22,163,74,0.1);border:1px solid rgba(22,163,74,0.2);">🚀</div><div class="asc-info"><div class="asc-label">Deployments Automated</div><div class="asc-value">500+</div></div><div class="asc-trend">↑ active</div></div>
+      <div class="about-stat-card tilt-3d"><div class="asc-icon" style="background:rgba(8,145,178,0.1);border:1px solid rgba(8,145,178,0.2);">⏱</div><div class="asc-info"><div class="asc-label">Avg Deploy Time Saved</div><div class="asc-value">60%</div></div><div class="asc-trend">↑ vs manual</div></div>
+      <div class="about-stat-card tilt-3d"><div class="asc-icon" style="background:rgba(245,158,11,0.1);border:1px solid rgba(245,158,11,0.2);">☁</div><div class="asc-info"><div class="asc-label">Cloud Environments</div><div class="asc-value">AWS · GCP · Azure</div></div><div class="asc-trend">multi-cloud</div></div>
+      <div class="about-stat-card tilt-3d"><div class="asc-icon" style="background:rgba(139,92,246,0.1);border:1px solid rgba(139,92,246,0.2);">⎈</div><div class="asc-info"><div class="asc-label">K8s Clusters Managed</div><div class="asc-value">10+ prod clusters</div></div><div class="asc-trend">↑ scaling</div></div>
+    </div>
+  </div>
+</section>
+
+</div>
+<div id="page-nav"></div>
+<footer>
+  <span class="footer-brand">[ darshan@devops ]</span> — Multi-page CI/CD Portfolio &nbsp;·&nbsp; © 2025 Darshan
+</footer>
+<div class="status-bar">
+  <div class="sb-item" id="sb-stage">⎈ stage</div>
+  <span class="sb-sep">|</span>
+  <div class="sb-item">✓ all systems nominal</div>
+  <span class="sb-sep">|</span>
+  <div class="sb-item">🟢 online</div>
+  <div class="sb-right">
+    <div class="sb-item" id="sb-time"></div>
+    <div class="sb-item">UTF-8</div>
+    <div class="sb-item">zsh</div>
+  </div>
+</div>
+<script src="assets/logos.js"></script>
+<script src="assets/bg.js"></script>
+<script src="assets/common.js"></script>
+
+<script src="assets/script.js"></script>
+</body>
+</html>

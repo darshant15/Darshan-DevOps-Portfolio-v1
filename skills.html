@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>[ darshan@devops ] ~ $ build</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="build">
+
+<canvas id="devops-bg-canvas"></canvas>
+<div class="orbs-layer"><div class="orb orb-1"></div><div class="orb orb-2"></div><div class="orb orb-3"></div></div>
+<div id="page-transition"><div class="pt-spinner"></div><div class="pt-text">npm run build...</div></div>
+
+<nav>
+  <div class="nav-brand">
+    <a href="index.html" data-transition><span class="bracket">[</span><span>darshan</span><span class="bracket">@devops</span><span class="bracket">]</span></a>
+    <div class="nav-dot"></div>
+  </div>
+  <ul class="nav-links">
+    <li><a href="index.html" data-page="checkout" data-transition>home</a></li>
+    <li><a href="skills.html" data-page="build" data-transition>skills</a></li>
+    <li><a href="experience.html" data-page="test" data-transition>experience</a></li>
+    <li><a href="projects.html" data-page="scan" data-transition>projects</a></li>
+    <li><a href="cicd-flow.html" data-page="pipeline" data-transition>pipeline</a></li>
+    <li><a href="about.html" data-page="config" data-transition>about</a></li>
+    <li><a href="certs.html" data-page="verify" data-transition>certs</a></li>
+    <li><a href="contact.html" data-page="deploy" data-transition>contact</a></li>
+  </ul>
+</nav>
+
+<div id="pipeline-bar" class="pipeline-bar">
+  <div class="pipeline-track"><div class="pipeline-fill"></div></div>
+  <div class="pipeline-stages"></div>
+</div>
+
+<div class="page-content">
+
+<div class="page-hero-mini reveal">
+  <div class="section-eyebrow" style="justify-content:center;">$ npm run build</div>
+  <h1>Tech <span style="color:var(--green)">Stack</span></h1>
+  <p>Stage 2 of the pipeline — the tools and technologies I build with every day.</p>
+</div>
+<section id="skills">
+  <div class="skills-grid">
+    <div class="skill-card reveal tilt-3d"><div class="skill-card-header"><div class="skill-cat">Cloud & Infra</div><div class="skill-icon-badge">☁</div></div><div class="skill-tags"><span class="tag">AWS</span><span class="tag">GCP</span><span class="tag">Azure</span><span class="tag">EC2</span><span class="tag">S3</span><span class="tag">VPC</span><span class="tag">Lambda</span></div><div class="skill-bar-wrap"><div class="skill-bar-track"><div class="skill-bar-fill" style="width:90%;"></div></div><div class="skill-pct">90%</div></div></div>
+    <div class="skill-card reveal tilt-3d"><div class="skill-card-header"><div class="skill-cat">Containers & Orchestration</div><div class="skill-icon-badge">⎈</div></div><div class="skill-tags"><span class="tag">Docker</span><span class="tag">Kubernetes</span><span class="tag">Helm</span><span class="tag">EKS</span><span class="tag">Docker Compose</span></div><div class="skill-bar-wrap"><div class="skill-bar-track"><div class="skill-bar-fill" style="width:88%;"></div></div><div class="skill-pct">88%</div></div></div>
+    <div class="skill-card reveal tilt-3d"><div class="skill-card-header"><div class="skill-cat">CI/CD & Automation</div><div class="skill-icon-badge">⚡</div></div><div class="skill-tags"><span class="tag">Jenkins</span><span class="tag">GitHub Actions</span><span class="tag">GitLab CI</span><span class="tag">ArgoCD</span><span class="tag">CircleCI</span></div><div class="skill-bar-wrap"><div class="skill-bar-track"><div class="skill-bar-fill" style="width:85%;"></div></div><div class="skill-pct">85%</div></div></div>
+    <div class="skill-card reveal tilt-3d"><div class="skill-card-header"><div class="skill-cat">IaC & Config</div><div class="skill-icon-badge">⚙</div></div><div class="skill-tags"><span class="tag">Terraform</span><span class="tag">Ansible</span><span class="tag">CloudFormation</span><span class="tag">Packer</span></div><div class="skill-bar-wrap"><div class="skill-bar-track"><div class="skill-bar-fill" style="width:82%;"></div></div><div class="skill-pct">82%</div></div></div>
+    <div class="skill-card reveal tilt-3d"><div class="skill-card-header"><div class="skill-cat">Monitoring & Observability</div><div class="skill-icon-badge">📊</div></div><div class="skill-tags"><span class="tag">Prometheus</span><span class="tag">Grafana</span><span class="tag">ELK Stack</span><span class="tag">Datadog</span><span class="tag">PagerDuty</span></div><div class="skill-bar-wrap"><div class="skill-bar-track"><div class="skill-bar-fill" style="width:80%;"></div></div><div class="skill-pct">80%</div></div></div>
+    <div class="skill-card reveal tilt-3d"><div class="skill-card-header"><div class="skill-cat">Scripting & Dev</div><div class="skill-icon-badge">💻</div></div><div class="skill-tags"><span class="tag">Bash</span><span class="tag">Python</span><span class="tag">Go</span><span class="tag">Git</span><span class="tag">Linux</span><span class="tag">YAML</span></div><div class="skill-bar-wrap"><div class="skill-bar-track"><div class="skill-bar-fill" style="width:87%;"></div></div><div class="skill-pct">87%</div></div></div>
+  </div>
+</section>
+
+</div>
+<div id="page-nav"></div>
+<footer>
+  <span class="footer-brand">[ darshan@devops ]</span> — Multi-page CI/CD Portfolio &nbsp;·&nbsp; © 2025 Darshan
+</footer>
+<div class="status-bar">
+  <div class="sb-item" id="sb-stage">⎈ stage</div>
+  <span class="sb-sep">|</span>
+  <div class="sb-item">✓ all systems nominal</div>
+  <span class="sb-sep">|</span>
+  <div class="sb-item">🟢 online</div>
+  <div class="sb-right">
+    <div class="sb-item" id="sb-time"></div>
+    <div class="sb-item">UTF-8</div>
+    <div class="sb-item">zsh</div>
+  </div>
+</div>
+<script src="assets/logos.js"></script>
+<script src="assets/bg.js"></script>
+<script src="assets/common.js"></script>
+
+<script src="assets/script.js"></script>
+</body>
+</html>

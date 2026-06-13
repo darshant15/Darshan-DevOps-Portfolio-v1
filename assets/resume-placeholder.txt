@@ -1,0 +1,3 @@
+Add your resume PDF here and rename it to: resume.pdf
+
+The download button in the hero section links to: assets/resume.pdf
