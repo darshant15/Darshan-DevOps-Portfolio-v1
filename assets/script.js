@@ -3,7 +3,7 @@
 // ── TYPING EFFECT ────────────────────────────────────────────
 const typeEl = document.getElementById('type-text');
 if (typeEl) {
-  const terms = ['DevOps Engineer', 'Cloud Architect', 'SRE Enthusiast', 'Infra Automator', 'Pipeline Builder'];
+  const terms = ['DevOps Engineer', 'CI/CD Engineer', 'SRE Enthusiast', 'Pipeline Builder'];
   let tIdx = 0, cIdx = 0, typing = true;
   function doType() {
     if (typing) {
@@ -74,7 +74,7 @@ if (cmdInput && termBody) {
       } else {
         const inp = document.createElement('div');
         inp.className = 't-line';
-        inp.innerHTML = `<span class="t-prompt">darshan@devops:~$ </span><span class="t-cmd">${val}</span>`;
+        inp.innerHTML = `<span class="t-prompt">darshant15@devops:~$ </span><span class="t-cmd">${val}</span>`;
         termBody.appendChild(inp);
         const res = document.createElement('div');
         res.className = 't-line t-output';
@@ -84,7 +84,7 @@ if (cmdInput && termBody) {
       }
       const cursorLine = document.createElement('div');
       cursorLine.className = 't-line';
-      cursorLine.innerHTML = '<span class="t-prompt">darshan@devops:~$ </span><span class="t-cursor"></span>';
+      cursorLine.innerHTML = '<span class="t-prompt">darshant15@devops:~$ </span><span class="t-cursor"></span>';
       termBody.appendChild(cursorLine);
       termBody.scrollTop = termBody.scrollHeight;
       cmdInput.value = '';
