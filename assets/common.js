@@ -5,7 +5,6 @@ const PIPELINE_STAGES = [
   { id: 'build',    file: 'skills.html',      label: 'Build',     cmd: 'npm run build',         icon: '🔨' },
   { id: 'test',     file: 'experience.html',  label: 'Test',      cmd: 'npm run test',          icon: '🧪' },
   { id: 'scan',     file: 'projects.html',    label: 'Scan',      cmd: 'trivy scan .',          icon: '🔍' },
-  { id: 'pipeline', file: 'cicd-flow.html',   label: 'Pipeline',  cmd: 'view pipeline',         icon: '⚡' },
   { id: 'config',   file: 'about.html',       label: 'Configure', cmd: 'terraform apply',       icon: '⚙' },
   { id: 'verify',   file: 'certs.html',       label: 'Verify',    cmd: 'kubectl verify',        icon: '✓' },
   { id: 'deploy',   file: 'contact.html',     label: 'Deploy',    cmd: './reach_out.sh',        icon: '🚀' },
