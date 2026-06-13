@@ -3,7 +3,7 @@
 // ── TYPING EFFECT ────────────────────────────────────────────
 const typeEl = document.getElementById('type-text');
 if (typeEl) {
-  const terms = ['DevOps Engineer', 'CI/CD Engineer', 'SRE Enthusiast', 'Pipeline Builder'];
+  const terms = ['DevOps Engineer', 'CI/CD Engineer', 'SRE Enthusiast', 'Infrastructure Automation Engineer'];
   let tIdx = 0, cIdx = 0, typing = true;
   function doType() {
     if (typing) {
@@ -48,10 +48,10 @@ const termBody = document.getElementById('term-body');
 if (cmdInput && termBody) {
   const commands = {
     'ls': '📁 about.txt  skills.json  projects/  certs/  contact.sh',
-    'whoami': 'darshan — DevOps Engineer | Cloud Infra | SRE',
+    'whoami': 'darshan — DevOps Engineer | DevSecOps | CICD',
     'pwd': '/home/darshan/portfolio',
     'date': new Date().toUTCString(),
-    'skills': '☁ AWS  ⎈ K8s  🐳 Docker  ⚙ Terraform  📊 Prometheus  🔧 Ansible',
+    'skills': '☁ AWS  ⎈ K8s  🐳 Docker  ⚙ Terraform  📊 Prometheus  🔧 Ansible  🚀 Argo CD',
     'uptime': 'up 2 years, 3 months, 0 incidents',
     'echo hello': 'Hello! Let\'s automate something.',
     'clear': '__clear__',
